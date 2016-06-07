@@ -1,0 +1,447 @@
+%
+% LaTeX source of my resume
+% =========================
+%
+% Heavily commented to to fit even LaTeX beginners (hopefully).
+%
+% See the `README.md` file for more info.
+%
+% This file is licensed under the CC-NC-ND Creative Commons license.
+%
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,a4paper]{article}
+
+% Set the page margins.
+\usepackage[a4paper,margin=0.75in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+
+
+
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% title on top of the document
+\maintitle{Jinyu Xie}{}{Last update on \today}
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:xjygr08@gmail.com}{xjygr08@gmail.com}\sbull
+\href{mailto:jxx123@psu.edu}{jxx123@psu.edu}\sbull
+\textsmaller{+}1 814-777-5960\sbull
+\href{http://sites.psu.edu/jinyuxie/}{sites.psu.edu/jinyuxie}
+\\
+323 Leonhard Building\sbull
+University Park\sbull
+PA 16802\sbull
+United States
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{Summary}  % a root section title
+
+\vspace{-1.3em}  % some vertical spacing
+\begin{multicols}{2}  % open a multicolumn environment
+\noindent \emph{Creative geek with roots in the open source movement, an entrepreneurial mindset and a passion for delivering value by developing maintainable software.}
+\\
+\\
+Graduate-level courses study in mathematics, dynamic system control, machine
+learning and computer programming. Pick up scientific research mindset with
+critical thinking and independent problem-solving skills.
+\end{multicols}
+
+
+\spacedhrule{0em}{-0.4em}
+
+\roottitle{Education}
+
+\headedsection
+{Pennsylvania State University, University Park, PA}
+{GPA 3.91/4.00}{
+  \headedsubsection
+  {Ph.D. Mechanical Engineering (Major), Computational Science (Minor)}
+  {Aug 2012 -- present}{}
+
+  \headedsubsection
+  {M.S Mechanical Engineering}{Aug 2012 -- May 2016}{}
+}
+
+\headedsection
+{Tsinghua University, Beijing, China}{GPA 3.70/4.00}{
+	\headedsubsection
+  {B.S. Instrumentation and Controls Engineering}{Aug 2008 -- July 2012}{}
+}
+
+\spacedhrule{0.5em}{-0.4em}
+\roottitle{Skills}
+
+\inlineheadsection
+{Programming:}{Matlab/Simulink (daily use, 5 years), C/C++ (course
+  projects/campus competitions), Version Control (Git, daily use), \LaTeX (daily use), Linux/Unix Shell Command Line (Basic Knowledge)}
+
+\inlineheadsection
+{Industrial Software (Internship Daily Use):}{PI Processbook,
+  Production Universe (Shell Oil\&Gas)}
+
+\inlineheadsection
+{Control Systems Design (2 relevant publications):}{Classical Control Theories
+(Laplace Transform, Bode/Nyquist Plot, PID Loop Tuning), Modern Control Theories
+(State Space, Model-Based Optimal Control, Linear Quadratic Regulator, Robust
+Control, Model Predictive Control)}
+
+\inlineheadsection
+{Signal Processing (6 relevant publications):}{(Extended)
+Kalman Filter, Finite Impulse Response (FIR) Filter, Fault Detection and Estimation}
+
+\inlineheadsection
+{Statistics (6 relevant publications):}{Time Series Analysis/Modeling (AR, ARX,
+  ARMAX, Box-Jenkins), Estimation Theories, Hypothesis Test}
+
+\inlineheadsection
+{Machine Learning (Course Projects):}{Principal Component Analysis,
+  Supervised Learning (Linear/Quadratic Discriminant Analysis, Logistic
+  Regression, CART, K-Nearest-Neighbor), Unsupervised Learning (K-means, Mixture
+  Models)}
+
+\inlineheadsection
+{3D Modeling/FEA (Course Projects):}{AutoCAD, Solidworks, COMSOL}
+
+\spacedhrule{2em}{0em}
+
+\roottitle{Work Experience}
+
+\headedsection
+{Information \& Controls Lab, Pennsylvania State University}
+{\textsc{University Park, PA}}
+  {
+    \headedsubsection
+    {Research Assistant - Control Algorithm Development for Artificial Pancreas}
+    {Aug 2012 -- present}
+    {
+      \begin{itemize}
+      \item NSF Funded Project with 3 journals and 3 conference proceedings:
+        Modeling, Identification, and Control towards Adaptive Personalized Glucose
+        Management for Insulin-Deficient Diabetes.
+        
+      \item Designed data collection experiment protocols that are both
+        clinically practical and highly excited for system identification.
+
+      \item Proposed a nonlinear data-driven model with multiple physiological
+        inputs to capture the blood sugar dynamics of the diabetic patients.
+        Validated the model with large scale of time-series data (3-day-length
+        data from 30 virtual patients and 5 real patients). 
+        
+      \item Applied signal processing algorithms (Extended Kalman Filter, FIR
+        Filter) and time series analysis (ARMAX) and for data preprocessing, model
+        parameter estimation and state estimation. Predicted the blood sugar level in 30
+        minutes with accuracy as high as 85\% in terms of FIT values.
+
+      \item Developed an Adaptive Model Predictive Controller that can
+        ``intelligently learn'' the model of the patient in real time and deliver
+        personalized therapy regimen.
+        
+      \item Introduced an innovative adaptive filtering algorithm (Variable
+        State Dimension Filter) to detect and estimate the meals taken by
+        patients with a successful detection rate of 96\% and false alarm rate
+        of 8\%.
+      \end{itemize}
+    }
+  }
+
+  \headedsection
+  {Process Automation Control \& Optimization Group, Shell Oil Company}
+  {\textsc{Houston, TX}}
+  {
+    \headedsubsection
+    {Deepwater R\&D Engineer, Post Grad Intern}{May 2015 -- Aug 2015}
+    {
+      \begin{itemize}
+      \item Delivered an enhanced pipeline leak detection system together with
+        technical reports ready for commission and deployment in time and
+        quality.
+        
+      \item Highlighted intern project by a General Manager at Shell US PhD
+        Intern Symposium. Received a prestigious award nominated by Process
+        Automation Control \& Optimization Group. 
+        
+      \item Worked in a project team (3 people across 2 different functionality
+        groups). Weekly meet up for brain storming and task distribution. Biweekly
+        report to project managers and line managers. Exposure to risk management,
+        algorithm prototyping (using Matlab) and hands-on implementation (using PI
+        Processbook and Shell Production Universe).
+        
+      \item Enhanced the existing pipeline leak monitor system (only detect
+        oil leakage in steady-state flow) to detect leakage during noisy
+        transient states by introducing model-based fault detection
+        methodologies. The enhanced monitor system covers the full operation time
+        (100\%) compared with 60\% of time with the original monitor system.  
+        
+      \item Identified the bias of the existing estimation algorithm by going
+        through 2 years of plant data, and presented a compensation strategy that
+        achieved 5\% improvement of estimation accuracy.
+        
+      \item Sped up the system deployment and replication procedure by modifying the system
+        structures and eliminating redundant codes (Visual Basic).
+        
+      \item Prepared simulation demo videos for operator education purposes.
+      \end{itemize}
+    }
+  }
+
+  \spacedhrule{1em}{-0.5em}
+
+  \roottitle{Related Projects}
+  \headedsection
+  {Machine Learning -- Satellite Image Semantics Classification}{Aug 2014 --
+    Dec 2014}{
+    \begin{itemize}
+    \item Data Set: 2400 images of 8x8 pixels labeled with 14 semantic
+      categories (beach, mountain, etc.). Project team size: 2.
+    \item Implemented multiple classification (linear/quadratic discriminant analysis,
+      logistic regression, k-nearest-neighbor, CART) and clustering (k-means,
+      k-center, mixture Gaussian) algorithms in Matlab for
+      supervised/unsupervised learning.
+    \item Performed k-fold cross validation to evaluate the prediction
+      performance of each learning algorithm. 
+    \item Improved the prediction performance (running time \& prediction
+      accuracy) by leveraging Principal Component Analysis (PCA). 
+    \end{itemize}
+  }
+
+  \headedsection
+  {Mechatronic Car -- Maze Runner}{Feb 2012 -- May 2012}{
+    \begin{itemize}
+    \item A smart car that searches feasible paths to target zones in a maze.
+      Project team team size: 4. 
+      
+    \item Designed and assembled sensor arrays and Printed Circuit Board (PCB)
+      of the power system.
+      
+    \item Programmed (embedded C) a motor control algorithm and a path searching
+      algorithm on a microchip (MSP430).
+
+    \end{itemize}
+  }
+
+  \headedsection
+  {Shopping Assistant Robot}{Aug 2011 -- Dec 2011}
+  {
+    \begin{itemize}
+    \item A robot that assists the disabled shopping in supermarkets. Project
+      team size: 4.
+      
+    \item Designed and assembled the grasp mechanism (hand) of the robot. Work
+      included rigid body design, material strength check, technical drawing
+      (AutoCAD, Solidworks), manufacturing process design.
+    \end{itemize}
+  }
+% \headedsection  % sets the header for the section and includes any subsections
+%   {\href{http://www.hoppinger.com}{Hoppinger}}
+%   {\textsc{Rotterdam, The Netherlands}} {%
+%   \headedsubsection
+%     {Head of Technology}
+%     {Apr \apo12 -- present}
+%     {\bodytext{Hoppinger is an open source minded ``full-service'' internet agency.  Reporting directly to the general director, Marijn Bom. In charge of drawing and carrying out the vision for the tech department consisting of 15 developers.  Streamlined datacenter operations with Puppet, introduced Rails for custom web-app development and Capistrano for deployment automation.  Intimately involved with the software architecture of all technically challenging projects.}}
+% }
+
+% \headedsection  % sets the header for a subsection and contains usually body text
+%   {\href{http://www.hro.nl}{HRO} (Rotterdam University of Applied Science)}
+%   {\textsc{Rotterdam, The Netherlands}} {%
+%   \headedsubsection
+%     {Guest Lecturer}
+%     {Sep \apo12 -- present}
+%     {\bodytext{Introductory lecture on history of software development and open source for 1\textsuperscript{st} year CS students.}}
+% }
+
+% \headedsection
+%   {\href{http://www.intellecap.com}{Intellecap}/\href{http://istpl.in}{\acr{ISTPL}}}
+%   {\textsc{Mumbai, Pune \& Hyderabad, India}} {%
+
+%   \headedsubsection
+%     {\acr{IT} Consultant}
+%     {Nov \apo08 -- Feb \apo09}
+%     {\bodytext{Intellecap is a social-sector advisory firm serving corporates, non-profits, development agencies and governments working in developing markets. Assessed their software development team and methodologies, trained their developers and build several web applications.  One of those apps is \href{http://www.mostfit.org}{Mostfit}, an open source \acr{MIS} for \href{http://en.wikipedia.org/wiki/Microcredit}{microcredit} lenders.}}
+
+%   \headedsubsection
+%     {\acr{IT} \& Strategy Consultant}
+%     {Jan \apo10 -- Aug \apo11}
+%     {\bodytext{Called in to solve several technical challenges and look at potential growth strategies for \href{http://www.mostfit.org}{Mostfit}.}}
+
+%   \headedsubsection
+%     {CTO}
+%     {Oct \apo11 -- Feb \apo12}
+%     {\bodytext{Proudly joined the \acr{C}-family of Intellicap's software division, ISTPL, to make \href{http://www.mostfit.org}{Mostfit} the nr.1 software solution for micro credit lenders around the globe.  Contracts got terminated half a year later due to investment issues.}}
+% }
+
+% \headedsection
+%   {\href{http://www.zarafa.com}{Zarafa}}
+%   {\textsc{Delft, The Netherlands}} {%
+%   \headedsubsection
+%     {\acr{QA} \& Release Manager}
+%     {Dec \apo09 -- Jan \apo11}
+%     {\bodytext{Zarafa might be the fastest growing open source product company in Europe, making a drop-in replacement for MS Exchange.  Reported directly to the \acr{CEO}, Brian Josef, and worked closely with the \acr{CTO}, Steve Hardy.  In charge of the 6 men strong QA department.  Established test automation and continuous integration.  Architected and implemented an all-integrated documentation and translation system that employed community effort.  Got sent to India to analyse and streamline their outsourced operations.}}
+% }
+
+% \headedsection
+%   {\href{http://www.dharmapublishing.com}{Dharma Publishing}}
+%   {\textsc{near San Francisco (\acr{CA}), \acr{USA}}} {%
+%   \headedsubsection
+%     {\acr{IT} Consultant}
+%     {Nov \apo09 -- Dec \apo09}
+%     {\bodytext{Dharma Publishing, the worlds largest Buddhist publisher, is a non-profit, all-volunteer organisation that helps to preserve Tibetan Buddhism and culture. Built their \href{http://www.dharmapublishing.com}{web shop}, and moved their digital content sales to SaaS applications.}}
+% }
+
+% \headedsection
+%   {\href{http://www.kde.org}{KDE}}
+%   {\href{http://edu.kde.org/kturtle}{edu.kde.org/kturtle}} {%
+%   \headedsubsection
+%     {Software Engineer}
+%     {Dec \apo03 -- present}
+%     {\bodytext{\acr{KT}urtle is an educational programming environment that simplifies learning the basics of programming.  \acr{KT}urtle is intended as a gift to future generations:\ a simple environment to get started with programming.  In 2003 \acr{KT}urtle got admitted to the \acr{KDE} project.}}
+% }
+
+% \headedsection
+%   {\href{http://truetopiaproject.org}{Truetopia Project}}
+%   {\href{http://truetopiaproject.org}{truetopiaproject.org}} {%
+%   \headedsubsection
+%     {Initiator}
+%     {Nov \apo07 -- Apr \apo10}
+%     {\bodytext{The Truetopia Project is an open source web application (Rails) to facilitate self-governing communities.  It provides a workflow for collaborative problem identification and solution design.}}
+% }
+
+% \headedsection
+%   {\href{http://www.dpu.ac.th/dpuic}{Dhurakij Pundit University International College}}
+%   {\textsc{Bangkok, Thailand}} {%
+%   \headedsubsection
+%     {Guest Lecturer}
+%     {Sep \apo09}
+%     {\bodytext{Invited by Dr.\@ Pilun Piyasirivej and Mr.\@ Michel Bauwens for two guest lectures:\ the open source movement and the semantic web.}}
+% }
+
+% \headedsection
+%   {\href{http://www.opendream.th}{Opendream}}
+%   {\textsc{Bangkok, Thailand}} {%
+%   \headedsubsection
+%     {\acr{IT} Consultant}
+%     {Aug \apo09 -- Sep \apo09}
+%     {\bodytext{Architected and largely implemented an open source media sharing web service (\acr{REST} api) that facilitates video uploads, transcoding and streaming.  Coached their development team on system design, Ruby development (using Merb/Rails) and testing strategies such as \acr{TDD}/\acr{BDD}.}}
+% }
+
+% \headedsection
+%   {\href{http://www.commuun.nl}{Commuun}}
+%   {\textsc{Rotterdam, The Netherlands}} {%
+%   \headedsubsection
+%     {Senior Visionary}
+%     {Jul \apo06 -- Sep \apo09}
+%     {\bodytext{Set up the technical infrastructure, defined the core competences and created a brand together with Peter Duijnstee (the proprietor of Commuun).  Then collaborated on several web applications (all Rails apps) within the context of his company.}}
+% }
+
+% \headedsection
+%   {\href{http://www.eur.nl}{Erasmus University Rotterdam}}
+%   {\textsc{Rotterdam, The Netherlands}} {%
+%   \headedsubsection
+%     {Guest Lecturer}
+%     {Jul \apo06 -- Jul \apo09}
+%     {\bodytext{Conducted a guest lecture on the phenomenon of open source, as part of the first year curriculum of \emph{Computer Science \& Economics}.}}
+% }
+
+% %\headedsection
+% %  {LIP Automatisering}
+% %  {\textsc{Breda, The Netherlands}} {%
+% %  \headedsubsection
+% %    {Software Auditor}
+% %    {Sep \apo06}
+% %    {\bodytext{Audited their flag ship product \emph{\acr{LIP} Suite}:\ an %\acr{ERP} solution for construction companies.}}
+% %}
+
+% \headedsection
+%   {\href{http://www.thehealthagency.com}{The Health Agency}}
+%   {\textsc{Delft \& Rotterdam, The Netherlands}} {%
+
+%   \headedsubsection
+%     {Software Engineer}
+%     {Jun \apo05 -- Feb \apo06}
+%     {\bodytext{Worked on their CMS (written in Python and uses Postgre\acr{SQL}, \acr{XML}/\acr{XSLT} and Twisted).}}
+
+%   \headedsubsection
+%     {Software Auditor}
+%     {Dec \apo06}
+%     {\bodytext{Assessed their Python/Zope/\acr{Z}o\acr{DB}-based web framework re-engineering project.}}
+% }
+
+% \vspace{-0.2em}
+% \begin{center}
+%   \emph{\small Please refer to my \href{http://www.linkedin.com/in/ciesbreijs}{Linked-in profile} for a more complete list of work experiences along with recommendations.}
+% \end{center}
+
+
+% \spacedhrule{-0.2em}{-0.4em}
+
+% \roottitle{Education}
+
+% \headedsection
+%   {\href{http://www.eur.nl/english}{Erasmus University Rotterdam}}
+%   {\textsc{Rotterdam, The Netherlands}} {%
+%   \headedsubsection
+%     {Bachelor degree in Computer Science \& Economics}
+%     {2004 -- 2007}
+%     {\bodytext{Focused on the economics of open source, rapid application development (\acr{RAD}) and the semantic web technology stack (\acr{RDF}/\acr{RDFS}, \acr{OWL} and \acr{SPARQL}).  Picked up quite some Java skills along the way.}}
+% }
+
+% \headedsection
+%   {\href{http://www.tudelft.nl/en}{Technical University Delft}}
+%   {\textsc{Delft, The Netherlands}} {%
+%   \headedsubsection
+%     {Industrial Design Engineering \textnormal{\textit{~(discontinued)}}}
+%     {2001 -- 2002} {}
+% }
+
+% \headedsection
+%   {\href{http://www.libanonlyceum.nl}{Libanon Lyceum}}
+%   {\textsc{Rotterdam, The Netherlands}} {%
+%   \headedsubsection
+%     {\acr{VWO} \textnormal{~(pre-university secondary education)}}
+%     {1994 -- 2000} {}
+% }
+
+
+% \spacedhrule{0.5em}{-0.4em}
+
+% \roottitle{Skills}
+
+% \inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+%   {Technical expertise:}
+%   {Software design and implementation, with(in) a team.  Big fan of Agile methodologies (Scrum and Kanban), automated deployment (Capistrano) and continuous integration (Hudson/Jenkins).  Enjoys writing Ruby/\nsp Python/\nsp Java/\nsp \CPP, yet flirts regularly with Haskell.  Solid knowledge of web technologies:\ \acr{HTML+CSS}, \acr{XML}, \acr{RDF}, \acr{REST}, \acr{SOAP} and JavaScript (mostly Angular and jQuery).  Linux administration skills:\ Bash, Apache, My\acr{SQL}, Postgres\acr{SQL}, virtualization/cloud (Vagrant, Open\acr{VZ}, \acr{VM}ware, \acr{KVM}, Xen and \acr{EC}2), datacenter automation (Puppet and Chef).}
+
+% \vspace{0.5em}
+% \inlineheadsection
+%   {Natural languages:}
+%   {Dutch \emph{(mother tongue)}, English \emph{(full professional proficiency)}, German \emph{(limited working proficiency)}, French \emph{(elementary proficiency)} and Mandarin Chinese \emph{(beginner)}.}
+
+
+% \spacedhrule{1.6em}{-0.4em}
+
+% \roottitle{Interests}
+
+% \inlineheadsection
+%   {Non-exhaustive and in alphabetical order:}
+%   {art, Buddhism, cryptography, Go (board game), history, music, open source, philosophy, software engineering (methodologies), travel, typography (e.g.\ graphic design, \LaTeX), \acr{UI}/\acr{UX}-design and vegetarian/vegan cooking.}
+
+
+\end{document}
+
+＀
