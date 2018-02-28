@@ -1,4 +1,4 @@
-FILENAME = Resume_Jinyu_Xie
+FILENAME = Resume
 COMPILER = xelatex
 all: $(FILENAME).tex
 	$(COMPILER) $(FILENAME).tex 
