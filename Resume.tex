@@ -12,6 +12,7 @@
 
 % Start a document with the here given default font size and paper size.
 \documentclass[10pt,a4paper]{article}
+\usepackage{ctex}
 
 % Set the page margins.
 \usepackage[a4paper,margin=0.5in]{geometry}
@@ -38,7 +39,7 @@
 
 
 % title on top of the document
-\maintitle{Shengfeng Li}{}{Last update on \today}
+\maintitle{李盛峰}{}{}
 
 \nobreakvspace{0.3em}  % add some page break averse vertical spacing
 
@@ -48,16 +49,16 @@
 % \href well..
 % \\ breaks the line into a new paragraph
 \noindent\href{mailto:cs.shengfeng.li@gmail.com}{cs.shengfeng.li@gmail.com}\sbull
-225-475-4689\sbull\href{https://www.linkedin.com/in/shengfeng-li/}{www.linkedin.com/in/shengfeng-li}\sbull
+\href{https://www.linkedin.com/in/shengfeng-li/}{www.linkedin.com/in/shengfeng-li}\sbull
 \href{https://github.com/lishengfeng}{github.com/lishengfeng}
 
 \spacedhrule{0em}{-1em}  % a horizontal line with some vertical spacing before and after
-\roottitle{Summary}  % a root section title
+\roottitle{概要}  % a root section title
 \begin{itemize}
 \setlength{\itemsep}{0.1em}
-\item Over 5 years of experience in \textbf{Java and Android app design and implementation}, including 2 years of R\&D experience at \textbf{Fujitsu, Tokyo, Japan}.
-\item Skilled in \textbf{web development} for over 5 years, with an additional year of experience in \textbf{Python}.
-\item Proficient in \textbf{Agile} and professional software development cycles, including API design, version control, peer code review, and unit testing.
+\item 拥有5年的\textbf{Java和安卓应用设计与实现经验}.
+\item 拥有超过5年的\textbf{网页开发经验}.
+\item 精通敏捷开发和软件开发周期,包括API设计, 版本控制, 代码审查和单元测试.
 \end{itemize}
 % \roottitle{Objective}
 % To obtain an full-time position that
@@ -112,22 +113,22 @@
 
 \spacedhrule{0em}{-1em}
 
-\roottitle{Work Experience}
+\roottitle{工作经验}
 
 \headedsection
 {TiMaven}
 {\textsc{BATON ROUGE, LA}}
 {
   \headedsubsection
-  {Senior Software Engineer}
-  {May 2019 - Present}
+  {高级软件工程师}
+  {2019年5月 - 现在}
   {
     \begin{itemize}
-      \item Developed a microservice application for time management, enabling industries to analyze timesheets, manage time allocation, equipment, purchasing, and generate reports.
-      \item Created a microservice application for human resource management, simplifying employee status management for industries.
-      \item Built a microservice application for corporate staff in industries to manage projects and contracts.
-      \item Developed a microservice application for decision-making in the renewable energy industry, including Solar, Wind Turbine, and Fuel, facilitating the decision-making process.
-      \item Designed and built a cross-platform mobile application that enables users to search for local properties and receive professional inspection suggestions.
+      \item 开发时间管理的微服务网站，帮助工业公司记录，计算，分析员工时间，设备使用以及生成定制化的报告。
+      \item 开发人力资源管理网站，帮助公司联系和招聘员工。
+      \item 开发项目和合同管理的微服务网站，帮助客户管理大量项目和合同。
+      \item 开发可再生能源相关的微服务网站, 通过用户输入的参数给用户合理的对可再生能源设备的配置.
+      \item 开发一款安卓和苹果软件, 软件可以查询当地房地产的售卖情况以及根据房子的参数提供需要注意的检查项目。
     \end{itemize}
   }
 }
@@ -137,30 +138,28 @@
 {\textsc{BATON ROUGE, LA}}
 {
   \headedsubsection
-  {Research Assistant - Full-Stack Web Development}
-  {Sep 2017 - May 2019}
+  {助教 - 全栈工程师}
+  {2017年9月 - 2019年五月}
   {
     \begin{itemize}
-      \item Developed a web server from scratch using Java, JS, and JSP to help over 10 high schools manage assignments, collect homework, grade submissions, and provide feedback to students. The system is currently used by more than 500 students. Implemented a professional build environment using Docker and Git, along with a PostgreSQL database.
-      \item Assisted in data gathering, organization, and presentation to teachers.
-      \item Designed an intuitive content editing process for teachers.
+      \item 设计以及实现了一个网站，帮助超过十所学校的老师通过网站布置作业，评分作业以及给学生反馈。超过500名学生使用了该网站
     \end{itemize}
   }
 }
 
 \headedsection
-{Beijing Brain Cell Software Co., LTD}
-{\textsc{BEIJING, CHINA}}
+{北京思元软件有限公司}
+{\textsc{北京, 中国}}
   {
     \headedsubsection
-    {Senior Software Engineer - Vending Machine Control System Development}
-    {Feb 2016 -- July 2017}
+    {高级程序员 - 安卓工程师}
+    {2016年2月 -- 2017年7月}
     {\vspace{0.1em}
       \begin{itemize}
         \setlength{\itemsep}{0.3em}
-        \item Led a team of five software engineers in developing the vending machine control system using Android/Java for multiple vending machine platforms.
-        \item Designed the software build process architecture and utilized Gradle to automate user interface adaptation for different devices and protocols. Implemented features for vending machines embedded in Android systems, resulting in over \$300k in revenue.
-        \item Conceptualized, designed, and implemented a remote control and maintenance system for vending machines, enabling remote administration and reducing maintenance and travel costs by 90\%.
+        \item 带领五人开发团队开发自动售水机的开发
+        \item 设计并实现了对不同设备和协议的支持
+        \item 设计并实现了远程维护系统，节省了大量出差支出
       % \item Predicted the blood glucose level with a fit of 85\% by implementing
       %   advanced signal processing/estimation algorithms (Time Series, Extended Kalman Filter, FIR
       %   Filter).
@@ -220,17 +219,16 @@
   }
 
 \headedsection
-{Fujitsu}
-{\textsc{TOKYO, JAPAN}}
+{富士通}
+{\textsc{东京, 日本}}
 {
   \headedsubsection
-  {Software Engineer - Android App Development}
+  {软件工程师 - 安卓工程师}
   {Apr 2014 - Feb 2016}
   {
     \begin{itemize}
-      \item Designed and implemented complex software for Android devices, including fingerprint processing applications used on multiple models.
-      \item Diagnosed and troubleshooted problems, and improved application performance using Java Native Interface.
-      \item Achieved fluency in the Japanese language within two years.
+      \item 设计和实现了多个复杂的安卓软件，其中指纹识别软件被使用于多款安卓设备中
+      \item 调查并发现软件性能瓶颈，通过JNI的方法实现的性能的大提升.
     % \item Identify hydrogen refinery process models (Box-Jenkins Models, 17 inputs,
     %   36 outputs) using closed-loop data.
 
@@ -244,17 +242,17 @@
 
 \vspace{0.2em}
   \headedsection
-  {Beijing Brain Cell Software Co., LTD}
-  {\textsc{BEIJING, CHINA}}
+  {北京思元软件有限公司}
+  {\textsc{北京，中国}}
   {
     \headedsubsection
-    {Software Engineer - Android App Development}{July 2012 -- Apr 2014}
+    {初级工程师 - 安卓工程师}{2012年7月 -- 2014年4月}
     {\vspace{0.1em}
       \begin{itemize}
         \setlength{\itemsep}{0.3em}
-        \item Designed and implemented the user interface for USB operation screen, including a tree view for USB directories to meet complex requirements.
-        \item Developed an application for a movie ticket vending machine.
-        \item Created an application for displaying daily news.
+        \item 参与设计和实现了本田车载系统的USB模块.
+        \item 设计以及实现了电影售卖机的安卓软件
+        \item 实现了一款显示每日新闻的软件
       % \item Worked in a project team (3 people across 2 different functionality
       %   groups). Weekly meet up for brain storming and task distribution. Biweekly
       %   report to project managers and line managers. Exposure to risk management,
@@ -377,8 +375,7 @@
   % {Aug 2012 -- Aug 2016 (Expected)}{}
 
   \headedsubsection
-  {M.S. Computer Science}{Aug 2017
-    -- May 2019}{}
+  {计算机硕士}{2017年8月 -- 2019年5月}{}
       % \vspace{0.3em}\\
       % \textbf{$\bullet$ Relevant Courses:} Real Analysis, Numerical Optimization, Theory of
       % Probability/Statistics, Digital Signal Processing, Classical/Linear/Nonlinear/Optimal/Robust Control, C++
@@ -386,14 +383,14 @@
 }
 \vspace{0.1em}
 \headedsection
-{Beijing Forestry University, Beijing, China}{
+{北京林业大学}{
 	\headedsubsection
-  {B.S. Wood Science and Engineering}{Aug 2008 -- July 2012}{}
+  {木材科学与工程(家具设计与制造方向)学士}{2008年8月 -- 2012年7月}{}
 }
 
 
 \spacedhrule{0.1em}{-0.8em}
-\roottitle{Skills}
+\roottitle{技能}
 \textbf{Advanced: Java, Android, Web development(JS/JSP/HTML/CSS/Hibernate/Spring), Database(SQL/Postgresql), Version Control (Git), Python}\\
 Others: Linux/Unix Shell, Maven, Docker, C, Machine Learning, Deep learning, Embedded development
 % \begin{tabular}{ll}
