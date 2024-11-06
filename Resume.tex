@@ -14,7 +14,7 @@
 \documentclass[10pt,a4paper]{article}
 
 % Set the page margins.
-\usepackage[a4paper,margin=0.5in]{geometry}
+\usepackage[a4paper,margin=0.3in]{geometry}
 
 % Setup the language.
 \usepackage[english]{babel}
@@ -42,7 +42,7 @@
 \maintitle{Ying Xiao}{}{Last update on \today}
 \end{center}
 
-\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+\nobreakvspace{0.2em}  % add some page break averse vertical spacing
 
 % \noindent prevents paragraph's first lines from indenting
 % \mbox is used to obfuscate the email address
@@ -54,12 +54,14 @@
 
 \spacedhrule{0em}{-1em}  % a horizontal line with some vertical spacing before and after
 \roottitle{SKILLS}  % a root section title
-\begin{itemize}
-\setlength{\itemsep}{0.1em}
-\item \textbf{Data Analysis:} MS SQL Server, Python (pandas), Tableau, Intermediate Excel
-\item \textbf{Data Modeling:} SAS Enterprise Miner
-\item \textbf{Visualization:} Tableau, Excel
-\end{itemize}
+%\begin{itemize}
+%\setlength{\itemsep}{0.1em}
+\textbf{Data Analysis, Data Modeling, Visualization:} MS SQL Server, Python, Tableau, SAS Enterprise Miner
+%\item \textbf{Data Analysis, Data Modeling, Visualization:} MS SQL Server, Python (pandas), Tableau, SAS Enterprise Miner, Excel (Intermediate)
+%\item \textbf{Data Analysis:} MS SQL Server, Python (pandas), Tableau, Intermediate Excel
+%\item \textbf{Data Modeling:} SAS Enterprise Miner
+%\item \textbf{Visualization:} Tableau, Excel
+%\end{itemize}
 % \roottitle{Objective}
 % To obtain an full-time position that
 % fits my background of \textbf{Control Systems, Signal
@@ -114,42 +116,55 @@
 \spacedhrule{0em}{-1em}
 
 \roottitle{Projects}
+ 
+\headedsection
+{\textbf{Coal Reclaimed Machine Maintenance Assessment}}
+{{\hfill\emph{Aug 2024}}}
+{
+  {
+    \begin{itemize}
+      \item Analyzed maintenance needs for five coal reclaimed machines at a coal terminal by identifying those exceeding idle capacity, utilizing \textbf{Tableau} to generate clear, data-driven insights.
+      \item Conducted extensive data preparation to ensure accuracy, optimizing datasets for effective visualization and actionable insights on machine performance and maintenance requirements.
+      \item Compiled findings into a comprehensive report for executive stakeholders, delivering targeted recommendations to support proactive maintenance decisions and operational efficiency.
+    \end{itemize}
+  }
+}
 
 \headedsection
-{\textbf{Jewelry Products Analysis}}
+{\textbf{Jewelry Product Optimization and Pricing Analysis}}
 {{\hfill\emph{May 2020}}}
 {
   {
     \begin{itemize}
-      \item Identified the best ROI products by analyzing product attributes and determined optimal price points for various ring categories over 5 years.
-      \item Merged multiple datasets using \textbf{SQL} and created metrics using pandas in \textbf{Python} to uncover price and profit patterns.
-      \item Provided strategic recommendations to optimize product development, improve resource efficiency, and maximize profitability.
+      \item Identified high-ROI products by analyzing product attributes and determining optimal price points for multiple ring categories over a five-year period, driving profitable pricing strategies.
+      \item Merged complex datasets using \textbf{SQL} and generated insightful metrics with \textbf{Python’s} Pandas to uncover key price and profit trends across product lines.
+      \item Delivered targeted recommendations to enhance product development, boost resource efficiency, and maximize profitability based on data-driven insights.
     \end{itemize}
   }
 }
 
 \headedsection
-{\textbf{Highly Rated Apps Analysis}}
+{\textbf{App Rating Enhancement Analysis}}
 {{\hfill\emph{February 2020}}}
 {
   {
     \begin{itemize}
-      \item Analyzed over 7,000 apps to identify features linked to high ratings, providing actionable recommendations for developers.
-      \item Developed and tested classification models in \textbf{SAS Enterprise Miner}, selecting those with the highest predictive accuracy.
-      \item Created a \textbf{Tableau} dashboard to explore data and identify key features, reducing data processing time by 25\%.
+      \item Analyzed data from over 7,000 apps to identify key features associated with high user ratings, offering actionable insights for app developers to enhance user satisfaction.
+      \item Built and tested classification models in \textbf{SAS Enterprise Miner}, selecting models with the highest predictive accuracy to improve feature-targeted recommendations.
+      \item Created a \textbf{Tableau} dashboard for interactive data exploration, which streamlined the analysis process and reduced data processing time by 25%.
     \end{itemize}
   }
 }
 
 \headedsection
-{\textbf{Alumni Donation Analysis}}
+{\textbf{Alumni Fundraising Strategy and Donation Forecasting}}
 {{\hfill\emph{December 2019}}}
   {
     {
       \begin{itemize}
-        \item Built data models to forecast donor numbers, high-value donations, and average giving per person.
-        \item Used \textbf{Tableau} to map donor regions and perform trend analysis on donation patterns.
-        \item Delivered insights for targeted donor engagement and data collection needs to enhance fundraising efforts.
+        \item Developed data models to forecast donor numbers, identify high-value donations, and calculate average giving per donor, supporting predictive fundraising strategies.
+        \item Leveraged \textbf{Tableau} to map donor regions and analyze donation patterns, revealing key trends across geographic areas.
+        \item Provided actionable insights to enhance targeted donor engagement and optimize data collection, driving more effective fundraising efforts.
       \end{itemize}
     }
   }
