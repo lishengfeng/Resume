@@ -139,12 +139,28 @@
 % that need indentation to the level of all text in the document
 \newenvironment{indentsection}%
 {\begin{list}{}%
-  {\setlength{\leftmargin}{\newparindent}\setlength{\parsep}{0pt}\setlength{\parskip}{0pt}\setlength{\itemsep}{0pt}\setlength{\topsep}{0pt}}%
+  {\setlength{\leftmargin}{0em}% Set left margin to 0em
+   \setlength{\parsep}{0pt}
+   \setlength{\parskip}{0pt}
+   \setlength{\itemsep}{0pt}
+   \setlength{\topsep}{0pt}}%
 }
 {\end{list}}
 
+\newcommand{\headedsection}[6]{%
+  \nopagebreak[4]%
+  \begin{indentsection}%
+    \item[]%
+      \textscale{1.1}{\textbf{#1} - \textbf{#3}}% Left part: Section title and bold subsection title
+    \hfill%
+    {\small #2 \hspace{1em} \emph{#4}}% Right part: Original right-aligned part and subsection's right-aligned part
+    #5% Body content
+  \end{indentsection}%
+  \nopagebreak[4]}
+
+
 % headerrow command, used for a new employer
-\newcommand{\headedsection}[3]{\nopagebreak[4]\begin{indentsection}\item[]\textscale{1.1}{#1}\hfill#2#3\end{indentsection}\nopagebreak[4]}
+\newcommand{\myheadedsection}[3]{\nopagebreak[4]\begin{indentsection}\item[]\textscale{1.1}{#1}\hfill#2#3\end{indentsection}\nopagebreak[4]}
 
 % subheaderrow command, used for a new position
 \newcommand{\headedsubsection}[3]{\nopagebreak[4]\begin{indentsection}\item[]\textbf{#1}\hfill\emph{#2}#3\end{indentsection}\nopagebreak[4]}
