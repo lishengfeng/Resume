@@ -106,11 +106,13 @@
 %%% DOCUMENT WIDE STYLING
 
 \usepackage{geometry} % Load geometry only once
-\geometry{a4paper, left=0.3in, right=0.3in, top=0.3in, bottom=0.1in} % Configure margins here
+\geometry{a4paper, left=0.3in, right=0.3in, top=0.0in, bottom=0.0in} % Configure margins here
 \pagestyle{empty}
 \setlength{\tabcolsep}{0em}
 \xspaceskip7pt  % some more spacing between sentences (use "i.e.\ " or "with SQL\@. " in case of errors)
 
+\usepackage{enumitem} % Add this package to customize list spacing
+\setlist[itemize]{left=0.5em, itemsep=0.2em, topsep=0.2em} % Adjust itemize margins and spacing
 
 
 %%% CUSTOM COMMANDS
@@ -141,7 +143,7 @@
 % that need indentation to the level of all text in the document
 \newenvironment{indentsection}%
 {\begin{list}{}%
-  {\setlength{\leftmargin}{0.6em}% Set left margin to 0em
+  {\setlength{\leftmargin}{0.3em}% Set left margin to 0em
    \setlength{\parsep}{0pt}
    \setlength{\parskip}{0pt}
    \setlength{\itemsep}{0pt}
@@ -160,6 +162,15 @@
   \end{indentsection}%
   \nopagebreak[4]}
 
+\newcommand{\headedCertSection}[2]{%
+  \nopagebreak[4]%
+  \begin{indentsection}%
+    \item[]%
+      \textscale{1.0}{\textbf{#1}}% Left part: Section title and bold subsection title
+    \hfill%
+    \emph{#2}% Right part: Original right-aligned part and subsection's right-aligned part
+  \end{indentsection}%
+  \nopagebreak[4]}
 
 % headerrow command, used for a new employer
 
