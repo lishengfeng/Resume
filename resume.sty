@@ -116,6 +116,15 @@
 % main title (name) with subtitle (date)
 \newcommand\maintitle[3]{\vbox to 0pt{\hfill\scriptsize\color{gray} #3}\vspace{-0.4em}\noindent{\LARGE \textbf{#1}}\ \ \ \emph{#2}}
 
+% title for the root sections (summary) of the resume
+\newcommand*\summarytitle[2]{%
+  \subsection*{#1}%
+  \vspace{-0.3em}%
+  \nopagebreak[4]%
+  \begin{list}{}{\setlength{\leftmargin}{1em} \setlength{\itemsep}{0.1em}} % Precise indentation
+    #2
+  \end{list}
+}
 % title for the root sections (experience, education, etc) of the resume
 \newcommand*\roottitle[1]{\subsection*{#1}\vspace{-0.3em}\nopagebreak[4]}
 
